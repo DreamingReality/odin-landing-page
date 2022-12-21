@@ -49,16 +49,22 @@ body {
     padding-right: 2em;
 }
 .header .header-description p {
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 1.4em;
 }
 .header .header-image {
     flex: 1;
-    height: 305px;
-    overflow: hidden;
 }
 
 .header .header-image img {
     max-width: 100%;
+    border: 2px solid #96a6bf;
+    border-radius: 10px;
+    max-height: 315px;
+}
+
+.header .header-image img:hover {
+    border-color: #3882f6;
 }
 
 footer {
@@ -76,6 +82,10 @@ button.blue {
     font-size: 16px;
     border-radius: 6px;
     cursor: pointer;
+}
+
+button.blue:hover {
+    background-color: #2467d3;
 }
 
 .content h2 {
@@ -100,6 +110,12 @@ button.blue {
 
 .content ul li img {
     max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #96a6bf;
+}
+
+.content ul li img:hover {
+    border-color: #3882f6;
 }
 
 .quote {
@@ -145,5 +161,5 @@ button.blue {
 }
 
 .action-call button.blue {
-    border: 1px solid white;
+    border: 2px solid white;
 }
